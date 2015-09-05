@@ -1,0 +1,12 @@
+{
+    "name": "widefocus/widget_previews",
+    "homepage": "https://github.com/WideFocus/WidgetPreviews",
+    "description": "Adds previews to all widget forms",
+    "type": "magento-module",
+    "authors": [
+        {
+            "name": "Ashoka de Wit",
+            "email": "ashoka@widefocus.net"
+        }
+    ]
+}
