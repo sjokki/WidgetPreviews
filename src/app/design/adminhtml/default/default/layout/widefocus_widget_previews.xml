@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 WideFocus. All rights reserved.
+ * http://www.widefocus.net
+ */
+-->
+<layout version="0.1.0">
+    <adminhtml_widget_loadoptions>
+        <block type="widefocus_widget_previews/adminhtml_widget_preview_container"
+               name="widget_preview_container"
+               output="toHtml">
+            <block type="widefocus_widget_previews/adminhtml_widget_preview"
+                   name="widget_preview"
+                   template="widefocus_widget_previews/preview.phtml"/>
+        </block>
+    </adminhtml_widget_loadoptions>
+
+    <adminhtml_widget_instance_edit>
+        <reference name="widget_instance_edit_tabs">
+            <block type="widefocus_widget_previews/adminhtml_widget_preview_container"
+                   name="widget_preview_container">
+                <block type="widefocus_widget_previews/adminhtml_widget_preview"
+                       name="widget_preview"
+                       template="widefocus_widget_previews/preview.phtml"/>
+            </block>
+            <action method="addTab">
+                <name>widget_preview_container</name>
+                <block>widget_preview_container</block>
+            </action>
+        </reference>
+    </adminhtml_widget_instance_edit>
+
+    <widefocus_widget_preview>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>widefocus_widget_previews/js/preview.js</name>
+            </action>
+            <action method="addCss">
+                <name>widefocus_widget_previews/css/preview.css</name>
+            </action>
+        </reference>
+    </widefocus_widget_preview>
+
+    <editor>
+        <update handle="widefocus_widget_preview"/>
+    </editor>
+
+    <adminhtml_widget_instance_edit>
+        <update handle="widefocus_widget_preview"/>
+    </adminhtml_widget_instance_edit>
+</layout>

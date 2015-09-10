@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 WideFocus. All rights reserved.
+ * http://www.widefocus.net
+ */
+-->
+<layout version="0.1.0">
+    <adminhtml_widefocus_widget_preview>
+        <update handle="page_empty"/>
+        <reference name="content">
+            <block type="widefocus_widget_previews/widget_preview"
+                   name="widget_preview"
+                   template="widefocus_widget_previews/preview.phtml"/>
+        </reference>
+    </adminhtml_widefocus_widget_preview>
+</layout>

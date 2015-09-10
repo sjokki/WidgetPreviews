@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 WideFocus. All rights reserved.
+ * http://www.widefocus.net
+ */
+-->
+<config>
+    <modules>
+        <WideFocus_WidgetPreviews>
+            <active>true</active>
+            <codePool>community</codePool>
+        </WideFocus_WidgetPreviews>
+    </modules>
+</config>

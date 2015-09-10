@@ -1,0 +1,39 @@
+<?php
+/**
+ * Copyright © 2015 WideFocus. All rights reserved.
+ * http://www.widefocus.net
+ *
+ * @var WideFocus_WidgetPreviews_Block_Adminhtml_Widget_Preview $this
+ */
+?>
+<div class="widget-preview-container">
+    <div class="widget-preview-settings">
+        <?php if ($this->isTemplateChooserVisible()): ?>
+        <label>
+            <?php echo $this->__('Template:') ?>
+            <?php echo $this->getTemplateChooserHtml() ?>
+        </label>
+        <?php endif ?>
+
+        <?php if ($this->isStoreChooserVisible()): ?>
+        <label>
+            <?php echo $this->__('Store view:') ?>
+            <?php echo $this->getStoreChooserHtml() ?>
+        </label>
+        <?php endif ?>
+
+        <?php echo $this->getRefreshButtonHtml() ?>
+
+        <input type="hidden"
+               name="widget_preview[widget_type]"
+               value="<?php echo $this->getWidgetType() ?>" />
+    </div>
+    <iframe id="<?php echo $this->getIframeId() ?>" class="widget-preview">
+    </iframe>
+</div>
+<script>
+    new WideFocus.WidgetPreviews.Preview(
+        $('<?php echo $this->getIframeId() ?>'),
+        {'url': '<?php echo $this->getPreviewUrl() ?>'}
+    );
+</script>

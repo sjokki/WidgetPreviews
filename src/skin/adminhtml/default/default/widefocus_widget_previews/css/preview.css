@@ -1,0 +1,13 @@
+.widget-preview {
+    height: 400px;
+    width: 99%;
+    border: 1px solid #d6d6d6;
+    resize: both;
+}
+.widget-preview-settings {
+    margin-bottom: 0.5em;
+}
+.widget-preview-settings label {
+    display: inline-block;
+    margin-right: 10px;
+}

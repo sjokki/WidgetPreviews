@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 WideFocus. All rights reserved.
+ * http://www.widefocus.net
+ */
+-->
+<config>
+
+    <modules>
+        <WideFocus_WidgetPreviews>
+            <version>1.0.0</version>
+        </WideFocus_WidgetPreviews>
+    </modules>
+
+    <global>
+        <blocks>
+            <widefocus_widget_previews>
+                <class>WideFocus_WidgetPreviews_Block</class>
+            </widefocus_widget_previews>
+        </blocks>
+        <helpers>
+            <widefocus_widget_previews>
+                <class>WideFocus_WidgetPreviews_Helper</class>
+            </widefocus_widget_previews>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <WideFocus_WidgetPreviews before="Mage_Adminhtml">WideFocus_WidgetPreviews_Adminhtml</WideFocus_WidgetPreviews>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <widefocus_widget_previews>
+                    <file>widefocus_widget_previews.xml</file>
+                </widefocus_widget_previews>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <WideFocus_WidgetPreviews>
+                    <files>
+                        <default>WideFocus_WidgetPreviews.csv</default>
+                    </files>
+                </WideFocus_WidgetPreviews>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <layout>
+            <updates>
+                <widefocus_widget_previews>
+                    <file>widefocus_widget_previews.xml</file>
+                </widefocus_widget_previews>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+    </default>
+
+</config>

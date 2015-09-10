@@ -1,0 +1,7 @@
+src/app/code/community/WideFocus/WidgetPreviews app/code/community/WideFocus/WidgetPreviews
+src/app/etc/modules/WideFocus_WidgetPreviews.xml app/etc/modules/WideFocus_WidgetPreviews.xml
+src/app/design/frontend/base/default/layout/widefocus_widget_previews.xml app/design/frontend/base/default/layout/widefocus_widget_previews.xml
+src/app/design/frontend/base/default/template/widefocus_widget_previews app/design/frontend/base/default/template/widefocus_widget_previews
+src/app/design/adminhtml/default/default/layout/widefocus_widget_previews.xml app/design/adminhtml/default/default/layout/widefocus_widget_previews.xml
+src/app/design/adminhtml/default/default/template/widefocus_widget_previews app/design/adminhtml/default/default/template/widefocus_widget_previews
+src/skin/adminhtml/default/default/widefocus_widget_previews skin/adminhtml/default/default/widefocus_widget_previews
