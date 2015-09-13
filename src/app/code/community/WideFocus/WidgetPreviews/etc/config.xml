@@ -68,6 +68,13 @@
     </frontend>
 
     <default>
+        <widefocus_widget_previews>
+            <general>
+                <enabled>1</enabled>
+                <enabled_in_wysiwig>1</enabled_in_wysiwig>
+                <enabled_in_instance>1</enabled_in_instance>
+            </general>
+        </widefocus_widget_previews>
     </default>
 
 </config>

@@ -7,6 +7,10 @@ Adds preview functionality to widget edit forms.
 - Adds a preview to the form when adding a widget in a WYSIWYG form.
 - Adds a preview tab when editing a preview instance.
 
+## Configuration
+
+Previews can be disabled by going to **System > Configuration > General > Widget Previews**.
+
 ## Version history
 
 Sep 10 2015 - 1.0.0 - First version
