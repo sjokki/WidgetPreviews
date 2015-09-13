@@ -30,5 +30,5 @@ Sep 13 2015 - 1.0.0 - First version
 
 ## License
 
-[Creative Commons Attribution 4.0 International (CC BY 4.0)]
-(http://creativecommons.org/licenses/by/4.0/)
+[Open Software License v. 3.0 (OSL-3.0)]
+(https://opensource.org/licenses/OSL-3.0)

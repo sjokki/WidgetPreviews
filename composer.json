@@ -1,13 +1,13 @@
 {
     "name": "widefocus/widget_previews",
-    "license": ["CC-BY-4.0"],
+    "license": "OSL-3.0",
     "type": "magento-module",
     "description": "Adds previews to widget forms in Magento",
     "homepage": "https://github.com/WideFocus/WidgetPreviews",
     "authors": [
         {
             "name": "Ashoka de Wit",
-            "homepage": "https://github.com/sjokki"
+            "homepage": "https://github.com/WideFocus"
         }
     ]
 }
