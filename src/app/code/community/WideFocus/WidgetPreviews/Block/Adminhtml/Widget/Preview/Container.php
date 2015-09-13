@@ -10,7 +10,6 @@
  */
 class WideFocus_WidgetPreviews_Block_Adminhtml_Widget_Preview_Container
     extends Mage_Adminhtml_Block_Widget_Form
-    implements Mage_Adminhtml_Block_Widget_Tab_Interface
 {
     /**
      * Prepare the container for the preview
@@ -27,55 +26,23 @@ class WideFocus_WidgetPreviews_Block_Adminhtml_Widget_Preview_Container
             'class'     => 'fieldset-wide',
         ]);
 
-        $previewBlock = $this->getLayout()->getBlock('widget_preview');
-        if ($previewBlock) {
-            $fieldset->setHtmlContent($previewBlock->toHtml());
-        }
-
+        $fieldset->setHtmlContent($this->getChildHtml());
         $this->setForm($form);
         return $this;
     }
 
     /**
-     * Return Tab label
+     * Prepare html output
      *
      * @return string
      */
-    public function getTabLabel()
+    protected function _toHtml()
     {
-        return $this->__('Widget Preview');
-    }
-
-    /**
-     * Return Tab title
-     *
-     * @return string
-     */
-    public function getTabTitle()
-    {
-        return $this->__('Widget Preview');
-    }
-
-    /**
-     * Can show tab in tabs
-     *
-     * @return boolean
-     */
-    public function canShowTab()
-    {
-        if (Mage::registry('current_widget_instance')) {
-            return Mage::registry('current_widget_instance')->isCompleteToCreate();
+        if (!Mage::getStoreConfigFlag('widefocus_widget_previews/general/enabled')
+            || !Mage::getStoreConfigFlag('widefocus_widget_previews/general/enabled_in_wysiwig')
+        ) {
+            return '';
         }
-        return true;
-    }
-
-    /**
-     * Tab is hidden
-     *
-     * @return boolean
-     */
-    public function isHidden()
-    {
-        return false;
+        return parent::_toHtml();
     }
 }

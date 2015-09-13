@@ -18,7 +18,7 @@
 
     <adminhtml_widget_instance_edit>
         <reference name="widget_instance_edit_tabs">
-            <block type="widefocus_widget_previews/adminhtml_widget_preview_container"
+            <block type="widefocus_widget_previews/adminhtml_widget_instance_edit_tab_preview"
                    name="widget_preview_container">
                 <block type="widefocus_widget_previews/adminhtml_widget_preview"
                        name="widget_preview"

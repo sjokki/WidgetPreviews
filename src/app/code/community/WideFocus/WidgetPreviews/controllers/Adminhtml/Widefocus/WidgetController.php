@@ -19,6 +19,8 @@ class WideFocus_WidgetPreviews_Adminhtml_Widefocus_WidgetController
     public function previewAction()
     {
         $previewParams = $this->getRequest()->getParam('widget_preview', []);
+        $widgetParams = $this->getRequest()->getParam('parameters', []);
+
         $selectedStoreId = isset($previewParams['store'])
             ? $previewParams['store']
             : Mage::app()->getDefaultStoreView()->getId();
@@ -30,7 +32,7 @@ class WideFocus_WidgetPreviews_Adminhtml_Widefocus_WidgetController
         if (!$type && isset($previewParams['widget_type'])) {
             $type = $previewParams['widget_type'];
         }
-        $widgetParams = $this->getRequest()->getParam('parameters', []);
+
         if (isset($previewParams['template'])) {
             $widgetParams['template'] = $previewParams['template'];
         }
