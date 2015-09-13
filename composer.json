@@ -1,12 +1,13 @@
 {
     "name": "widefocus/widget_previews",
-    "homepage": "https://github.com/WideFocus/WidgetPreviews",
-    "description": "Adds previews to all widget forms",
+    "license": ["CC-BY-4.0"],
     "type": "magento-module",
+    "description": "Adds previews to widget forms in Magento",
+    "homepage": "https://github.com/WideFocus/WidgetPreviews",
     "authors": [
         {
             "name": "Ashoka de Wit",
-            "email": "ashoka@widefocus.net"
+            "homepage": "https://github.com/sjokki"
         }
     ]
 }
